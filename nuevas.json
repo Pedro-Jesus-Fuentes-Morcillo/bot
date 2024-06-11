@@ -1,0 +1,1028 @@
+[
+{
+    "question": "¿Cuál es la unidad básica de la vida?",
+    "options": ["Tejido", "Célula", "Órgano", "Sistema"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué tipo de molécula es el ADN?",
+    "options": ["Carbohidrato", "Lípido", "Proteína", "Ácido nucleico"],
+    "correct_option": 3
+},
+{
+    "question": "¿Cuál es el proceso por el cual las plantas producen su alimento?",
+    "options": ["Respiración", "Digestión", "Fotosíntesis", "Fermentación"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué órgano del cuerpo humano es responsable de bombear sangre?",
+    "options": ["Cerebro", "Pulmones", "Corazón", "Hígado"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué vitamina se obtiene principalmente del sol?",
+    "options": ["Vitamina A", "Vitamina C", "Vitamina D", "Vitamina E"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué tipo de sangre es conocido como el donante universal?",
+    "options": ["A", "B", "AB", "O"],
+    "correct_option": 3
+},
+{
+    "question": "¿Cuál es la función principal de los glóbulos rojos?",
+    "options": ["Combatir infecciones", "Transportar oxígeno", "Coagular la sangre", "Producir hormonas"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué glándula produce la hormona insulina?",
+    "options": ["Tiroides", "Suprarrenal", "Páncreas", "Pituitaria"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué proceso celular produce células hijas idénticas?",
+    "options": ["Meiosis", "Mitosis", "Fertilización", "Transcripción"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es el órgano más grande del cuerpo humano?",
+    "options": ["Hígado", "Pulmones", "Cerebro", "Piel"],
+    "correct_option": 3
+},
+{
+    "question": "¿Qué es la fotosíntesis?",
+    "options": ["Proceso de respiración celular", "Proceso de división celular", "Proceso de producción de glucosa", "Proceso de reproducción sexual"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué tipo de macromolécula son las enzimas?",
+    "options": ["Carbohidratos", "Lípidos", "Proteínas", "Ácidos nucleicos"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el nombre del proceso por el cual las células cancerosas se diseminan?",
+    "options": ["Apoptosis", "Metástasis", "Meiosis", "Quimiotaxis"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué estructura celular controla las actividades de la célula?",
+    "options": ["Membrana celular", "Citoplasma", "Núcleo", "Ribosoma"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es la fórmula química del agua?",
+    "options": ["H2O", "O2H", "HO2", "OH2"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué tipo de célula tiene una pared celular?",
+    "options": ["Célula animal", "Célula vegetal", "Célula bacteriana", "Célula fúngica"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es la osmosis?",
+    "options": ["Movimiento de solutos a través de una membrana", "Movimiento de agua a través de una membrana", "Síntesis de proteínas", "Descomposición de moléculas"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué tipo de ácido nucleico contiene la información genética?",
+    "options": ["ARN", "ADN", "ATP", "GTP"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué son los ribosomas?",
+    "options": ["Orgánulos que producen energía", "Orgánulos que producen proteínas", "Orgánulos que descomponen residuos", "Orgánulos que almacenan nutrientes"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué estructura permite el intercambio de gases en las hojas de las plantas?",
+    "options": ["Estomas", "Cloroplastos", "Xilema", "Floema"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué es una metáfora?",
+    "options": ["Una comparación directa", "Una exageración", "Una descripción detallada", "Una repetición de sonidos"],
+    "correct_option": 0
+},
+{
+    "question": "¿Quién escribió 'Cien años de soledad'?",
+    "options": ["Gabriel García Márquez", "Jorge Luis Borges", "Mario Vargas Llosa", "Isabel Allende"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué tipo de palabra es 'rápidamente'?",
+    "options": ["Sustantivo", "Adjetivo", "Verbo", "Adverbio"],
+    "correct_option": 3
+},
+{
+    "question": "¿Cuál es el sinónimo de 'feliz'?",
+    "options": ["Triste", "Contento", "Cansado", "Enojado"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es una hipérbole?",
+    "options": ["Una comparación", "Una exageración", "Una pregunta retórica", "Una ironía"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es la función de un adjetivo?",
+    "options": ["Describir un sustantivo", "Describir un verbo", "Describir un adverbio", "Describir una preposición"],
+    "correct_option": 0
+},
+{
+    "question": "¿Quién escribió 'Don Quijote de la Mancha'?",
+    "options": ["Miguel de Cervantes", "William Shakespeare", "Fiodor Dostoievski", "Charles Dickens"],
+    "correct_option": 0
+},
+{
+    "question": "¿Cuál es la obra más famosa de Homero?",
+    "options": ["La Ilíada", "La Eneida", "La Divina Comedia", "El Quijote"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué es un oxímoron?",
+    "options": ["Una metáfora extendida", "Una contradicción aparente", "Una exageración extrema", "Una ironía sutil"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es una aliteración?",
+    "options": ["Repetición de consonantes", "Repetición de vocales", "Repetición de palabras", "Repetición de frases"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué significa 'in media res' en literatura?",
+    "options": ["En el comienzo", "En el clímax", "En medio de la acción", "En el desenlace"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el género literario de 'La Odisea'?",
+    "options": ["Épico", "Lírico", "Dramático", "Ensayo"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué es una sinécdoque?",
+    "options": ["Una parte que representa el todo", "Una exageración", "Una ironía", "Una comparación"],
+    "correct_option": 0
+},
+{
+    "question": "¿Cuál es el tema principal de 'Romeo y Julieta'?",
+    "options": ["Amor prohibido", "Venganza", "Traición", "Aventura"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué autor es conocido por sus sonetos?",
+    "options": ["William Shakespeare", "Edgar Allan Poe", "Gabriel García Márquez", "Jane Austen"],
+    "correct_option": 0
+},
+{
+    "question": "¿Cuál es la obra maestra de Dante Alighieri?",
+    "options": ["La Divina Comedia", "La Ilíada", "La Eneida", "El Paraíso Perdido"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué figura literaria se utiliza en 'El sol es un faro en el cielo'?",
+    "options": ["Metáfora", "Simil", "Hipérbole", "Aliteración"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué escritor es conocido como el 'Bardo de Avon'?",
+    "options": ["Geoffrey Chaucer", "William Shakespeare", "John Milton", "Samuel Johnson"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué libro comienza con 'En un lugar de la Mancha'?",
+    "options": ["Don Quijote de la Mancha", "Cien años de soledad", "La Divina Comedia", "La Odisea"],
+    "correct_option": 0
+},
+{
+    "question": "¿Cuál es el valor de π (pi) aproximadamente?",
+    "options": ["2.14", "3.14", "1.14", "4.14"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuánto es 7 al cuadrado?",
+    "options": ["42", "49", "56", "64"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es la derivada de x^2?",
+    "options": ["x", "2x", "x^2", "2"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuánto es el área de un triángulo con base 5 y altura 4?",
+    "options": ["20", "15", "10", "25"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el valor de la constante de Euler (e) aproximadamente?",
+    "options": ["2.71", "3.14", "1.62", "0.57"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué número primo sigue al 7?",
+    "options": ["9", "11", "13", "17"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es la integral de 1/x dx?",
+    "options": ["ln(x)", "e^x", "x^2/2", "1/(x^2)"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué tipo de función es y = x^3?",
+    "options": ["Lineal", "Cuadrática", "Cúbica", "Exponencial"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué es una matriz en matemáticas?",
+    "options": ["Un arreglo bidimensional de números", "Un número complejo", "Un polinomio", "Una función logarítmica"],
+    "correct_option": 0
+},
+{
+    "question": "¿Cuánto es el perímetro de un círculo con radio 3?",
+    "options": ["6π", "9π", "12π", "18π"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué representa la pendiente en una recta y = mx + b?",
+    "options": ["El punto de intersección con el eje y", "El ángulo de inclinación", "La tasa de cambio", "La distancia desde el origen"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es la raíz cuadrada de 144?",
+    "options": ["10", "11", "12", "13"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el número factorial de 5 (5!)?",
+    "options": ["20", "60", "100", "120"],
+    "correct_option": 3
+},
+{
+    "question": "¿Qué es una hipérbola?",
+    "options": ["Una figura geométrica cerrada", "Una parábola abierta", "Una sección cónica abierta", "Un polígono regular"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué es el logaritmo base 10 de 1000?",
+    "options": ["1", "2", "3", "4"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué tipo de triángulo tiene dos lados iguales?",
+    "options": ["Equilátero", "Escaleno", "Isósceles", "Rectángulo"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el área de un círculo con diámetro 10?",
+    "options": ["25π", "50π", "75π", "100π"],
+    "correct_option": 0
+},
+{
+    "question": "¿Cuál es el símbolo del elemento químico carbono?",
+    "options": ["Ca", "Co", "C", "Cu"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el elemento químico con símbolo 'O'?",
+    "options": ["Oxígeno", "Oro", "Osmio", "Oxalato"],
+    "correct_option": 0
+},
+{
+    "question": "¿Cuál es el pH del agua pura?",
+    "options": ["0", "7", "14", "5"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué tipo de enlace se forma entre dos átomos de oxígeno?",
+    "options": ["Iónico", "Covalente", "Metálico", "Van der Waals"],
+    "correct_option": 1
+},
+{
+    "question": "¿Quién propuso la tabla periódica moderna?",
+    "options": ["Newton", "Curie", "Mendeleev", "Einstein"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es la fórmula química del agua?",
+    "options": ["H2O", "O2H", "HO2", "OH2"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué partícula subatómica tiene carga positiva?",
+    "options": ["Neutrón", "Protón", "Electrón", "Quark"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es una solución en química?",
+    "options": ["Una mezcla heterogénea", "Una mezcla homogénea", "Un compuesto", "Un elemento"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es el gas más abundante en la atmósfera terrestre?",
+    "options": ["Oxígeno", "Nitrógeno", "Dióxido de carbono", "Argón"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es la molaridad?",
+    "options": ["Número de moles por litro de solución", "Número de moles por kilogramo de solvente", "Número de gramos por litro de solución", "Número de moléculas por litro de solución"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué es un catión?",
+    "options": ["Un ion con carga negativa", "Un ion con carga positiva", "Una molécula neutra", "Un ion poliatómico"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es el punto de ebullición del agua a nivel del mar?",
+    "options": ["50°C", "75°C", "100°C", "150°C"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué es un ácido según la teoría de Brønsted-Lowry?",
+    "options": ["Un donador de protones", "Un aceptador de protones", "Un donador de electrones", "Un aceptador de electrones"],
+    "correct_option": 0
+},
+{
+    "question": "¿Cuál es el símbolo químico del sodio?",
+    "options": ["So", "Na", "K", "S"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es una reacción exotérmica?",
+    "options": ["Una que absorbe calor", "Una que libera calor", "Una que no cambia la temperatura", "Una que requiere luz"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué describe la primera ley de Newton?",
+    "options": ["Inercia", "Fuerza", "Acción y reacción", "Gravedad"],
+    "correct_option": 0
+},
+{
+    "question": "¿Cuál es la unidad de fuerza en el Sistema Internacional?",
+    "options": ["Joule", "Newton", "Watt", "Pascal"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es la fórmula de la velocidad?",
+    "options": ["d/t", "t/d", "m/v", "v*d"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué tipo de onda es la luz?",
+    "options": ["Mecánica", "Sonora", "Electromagnética", "Gravitacional"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué es la gravedad?",
+    "options": ["Una fuerza repulsiva", "Una fuerza atractiva", "Una fuerza electromagnética", "Una fuerza nuclear"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué unidad se usa para medir la energía?",
+    "options": ["Newton", "Pascal", "Joule", "Watt"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué es la aceleración?",
+    "options": ["Cambio de velocidad", "Cambio de dirección", "Cambio de masa", "Cambio de tiempo"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué mide el voltaje?",
+    "options": ["Corriente", "Resistencia", "Potencia", "Diferencia de potencial"],
+    "correct_option": 3
+},
+{
+    "question": "¿Cuál es la fórmula de la fuerza?",
+    "options": ["m*a", "m/v", "v*t", "p/v"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué describe la ley de Coulomb?",
+    "options": ["Fuerza gravitacional", "Fuerza eléctrica", "Fuerza nuclear", "Fuerza magnética"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es el trabajo en física?",
+    "options": ["Fuerza aplicada sobre un objeto", "Energía transferida por una fuerza", "Potencia por tiempo", "Presión por volumen"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es la presión?",
+    "options": ["Fuerza por unidad de área", "Energía por unidad de volumen", "Masa por unidad de volumen", "Velocidad por unidad de tiempo"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué es un circuito en serie?",
+    "options": ["Un circuito con múltiples caminos", "Un circuito con un solo camino", "Un circuito con resistencias en paralelo", "Un circuito sin resistencia"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es la ley de conservación de la energía?",
+    "options": ["La energía se crea y se destruye", "La energía se conserva en sistemas cerrados", "La energía se disipa en sistemas abiertos", "La energía se transforma en materia"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué mide la frecuencia de una onda?",
+    "options": ["Longitud de onda", "Número de ciclos por segundo", "Amplitud de onda", "Velocidad de onda"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué tipo de lente tiene un espejo convexo?",
+    "options": ["Lente divergente", "Lente convergente", "Lente cilíndrica", "Lente esférica"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué es la temperatura absoluta?",
+    "options": ["0°C", "0°F", "0K", "100°C"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué describe la segunda ley de la termodinámica?",
+    "options": ["Conservación de la energía", "Incremento de la entropía", "Igualdad de trabajo y calor", "Equilibrio térmico"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué estudia la cinemática?",
+    "options": ["Movimiento sin considerar fuerzas", "Movimiento considerando fuerzas", "Interacción entre partículas", "Energía y trabajo"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué estudia la dinámica?",
+    "options": ["Movimiento sin considerar fuerzas", "Movimiento considerando fuerzas", "Interacción entre partículas", "Energía y trabajo"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es un ciclo térmico?",
+    "options": ["Cambio de fase", "Proceso de transferencia de calor", "Secuencia de procesos termodinámicos", "Equilibrio térmico"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué país es conocido por la samba y el carnaval?",
+    "options": ["México", "España", "Brasil", "Cuba"],
+    "correct_option": 2
+},
+{
+    "question": "¿En qué ciudad se encuentra la Torre Eiffel?",
+    "options": ["Londres", "Berlín", "Roma", "París"],
+    "correct_option": 3
+},
+{
+    "question": "¿Qué invento se atribuye a los hermanos Wright?",
+    "options": ["Teléfono", "Radio", "Avión", "Bombilla"],
+    "correct_option": 2
+},
+{
+    "question": "¿Quién pintó 'La última cena'?",
+    "options": ["Vincent van Gogh", "Pablo Picasso", "Claude Monet", "Leonardo da Vinci"],
+    "correct_option": 3
+},
+{
+    "question": "¿En qué continente se encuentra Egipto?",
+    "options": ["Asia", "América", "Europa", "África"],
+    "correct_option": 3
+},
+{
+    "question": "¿Cuál es el idioma oficial de Brasil?",
+    "options": ["Español", "Portugués", "Inglés", "Francés"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué moneda se usa en Japón?",
+    "options": ["Yen", "Won", "Yuan", "Rupia"],
+    "correct_option": 0
+},
+{
+    "question": "¿Cuál es el río más largo del mundo?",
+    "options": ["Amazonas", "Nilo", "Yangtsé", "Misisipi"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué país tiene la mayor población del mundo?",
+    "options": ["India", "Estados Unidos", "China", "Rusia"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el monte más alto del mundo?",
+    "options": ["K2", "Kilimanjaro", "Denali", "Everest"],
+    "correct_option": 3
+},
+{
+    "question": "¿Quién fue el primer presidente de los Estados Unidos?",
+    "options": ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué día se celebra la independencia de México?",
+    "options": ["16 de septiembre", "15 de agosto", "12 de octubre", "20 de noviembre"],
+    "correct_option": 0
+},
+{
+    "question": "¿Cuál es la capital de Australia?",
+    "options": ["Sídney", "Melbourne", "Canberra", "Brisbane"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el océano más grande del mundo?",
+    "options": ["Atlántico", "Índico", "Pacífico", "Ártico"],
+    "correct_option": 2
+},
+{
+    "question": "¿Quién es el autor de 'La Odisea'?",
+    "options": ["Virgilio", "Homero", "Sófocles", "Eurípides"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es el símbolo químico del oro?",
+    "options": ["Ag", "Au", "Pb", "Fe"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es el 'Big Bang'?",
+    "options": ["Teoría sobre el origen del universo", "Teoría sobre la formación de galaxias", "Teoría sobre la extinción de dinosaurios", "Teoría sobre la creación de agujeros negros"],
+    "correct_option": 0
+},
+{
+    "question": "¿Quién escribió '1984'?",
+    "options": ["Aldous Huxley", "George Orwell", "Ray Bradbury", "Kurt Vonnegut"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué tipo de gobierno tenía la antigua Roma bajo Julio César?",
+    "options": ["Democracia", "Monarquía", "República", "Imperio"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el país más grande del mundo en superficie?",
+    "options": ["Canadá", "China", "Rusia", "Estados Unidos"],
+    "correct_option": 2
+},
+{
+    "question": "¿Quién pintó la Mona Lisa?",
+    "options": ["Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso", "Claude Monet"],
+    "correct_option": 0
+},
+{
+    "question": "¿Cuál es el idioma más hablado en el mundo?",
+    "options": ["Inglés", "Español", "Mandarín", "Hindú"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué país se conoce como la Tierra del Sol Naciente?",
+    "options": ["China", "Japón", "Corea del Sur", "Tailandia"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es la capital de Canadá?",
+    "options": ["Toronto", "Vancouver", "Montreal", "Ottawa"],
+    "correct_option": 3
+},
+{
+    "question": "¿En qué ciudad se encuentra la Estatua de la Libertad?",
+    "options": ["Los Ángeles", "Washington D.C.", "Nueva York", "San Francisco"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es la capital de Francia?",
+    "options": ["París", "Londres", "Berlín", "Madrid"],
+    "correct_option": 0
+},
+{
+    "question": "¿Quién fue el líder del movimiento de independencia en la India?",
+    "options": ["Jawaharlal Nehru", "Mahatma Gandhi", "Indira Gandhi", "Subhas Chandra Bose"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es la capital de Italia?",
+    "options": ["Roma", "Milán", "Venecia", "Florencia"],
+    "correct_option": 0
+},
+{
+    "question": "¿En qué país se encuentra Machu Picchu?",
+    "options": ["México", "Perú", "Chile", "Argentina"],
+    "correct_option": 1
+},
+{
+    "question": "¿Quién pintó el techo de la Capilla Sixtina?",
+    "options": ["Raphael", "Leonardo da Vinci", "Michelangelo", "Donatello"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el continente más grande?",
+    "options": ["África", "América", "Asia", "Europa"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el metal más abundante en la corteza terrestre?",
+    "options": ["Hierro", "Aluminio", "Cobre", "Silicio"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es el evento deportivo más visto del mundo?",
+    "options": ["Super Bowl", "Juegos Olímpicos", "Copa Mundial de la FIFA", "Tour de Francia"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué país es conocido por su Gran Muralla?",
+    "options": ["Corea del Norte", "China", "Japón", "India"],
+    "correct_option": 1
+},
+
+{
+    "question": "¿Cuál es la capital de Francia?",
+    "options": ["París", "Londres", "Berlín", "Madrid"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué escritor es conocido como el 'Bardo de Avon'?",
+    "options": ["Geoffrey Chaucer", "William Shakespeare", "John Milton", "Samuel Johnson"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué libro comienza con 'En un lugar de la Mancha'?",
+    "options": ["Don Quijote de la Mancha", "Cien años de soledad", "La Divina Comedia", "La Odisea"],
+    "correct_option": 0
+},
+{
+    "question": "¿Cuál es el valor de π (pi) aproximadamente?",
+    "options": ["2.14", "3.14", "1.14", "4.14"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuánto es 7 al cuadrado?",
+    "options": ["42", "49", "56", "64"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es la derivada de x^2?",
+    "options": ["x", "2x", "x^2", "2"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuánto es el área de un triángulo con base 5 y altura 4?",
+    "options": ["20", "15", "10", "25"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el valor de la constante de Euler (e) aproximadamente?",
+    "options": ["2.71", "3.14", "1.62", "0.57"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué número primo sigue al 7?",
+    "options": ["9", "11", "13", "17"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es la integral de 1/x dx?",
+    "options": ["ln(x)", "e^x", "x^2/2", "1/(x^2)"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué tipo de función es y = x^3?",
+    "options": ["Lineal", "Cuadrática", "Cúbica", "Exponencial"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué es una matriz en matemáticas?",
+    "options": ["Un arreglo bidimensional de números", "Un número complejo", "Un polinomio", "Una función logarítmica"],
+    "correct_option": 0
+},
+{
+    "question": "¿Cuánto es el perímetro de un círculo con radio 3?",
+    "options": ["6π", "9π", "12π", "18π"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué representa la pendiente en una recta y = mx + b?",
+    "options": ["El punto de intersección con el eje y", "El ángulo de inclinación", "La tasa de cambio", "La distancia desde el origen"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es la raíz cuadrada de 144?",
+    "options": ["10", "11", "12", "13"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el número factorial de 5 (5!)?",
+    "options": ["20", "60", "100", "120"],
+    "correct_option": 3
+},
+{
+    "question": "¿Qué es una hipérbola?",
+    "options": ["Una figura geométrica cerrada", "Una parábola abierta", "Una sección cónica abierta", "Un polígono regular"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué es el logaritmo base 10 de 1000?",
+    "options": ["1", "2", "3", "4"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué tipo de triángulo tiene dos lados iguales?",
+    "options": ["Equilátero", "Escaleno", "Isósceles", "Rectángulo"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el área de un círculo con diámetro 10?",
+    "options": ["25π", "50π", "75π", "100π"],
+    "correct_option": 0
+},
+{
+    "question": "¿Cuál es el símbolo del elemento químico carbono?",
+    "options": ["Ca", "Co", "C", "Cu"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el elemento químico con símbolo 'O'?",
+    "options": ["Oxígeno", "Oro", "Osmio", "Oxalato"],
+    "correct_option": 0
+},
+{
+    "question": "¿Cuál es el pH del agua pura?",
+    "options": ["0", "7", "14", "5"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué tipo de enlace se forma entre dos átomos de oxígeno?",
+    "options": ["Iónico", "Covalente", "Metálico", "Van der Waals"],
+    "correct_option": 1
+},
+{
+    "question": "¿Quién propuso la tabla periódica moderna?",
+    "options": ["Newton", "Curie", "Mendeleev", "Einstein"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es la fórmula química del agua?",
+    "options": ["H2O", "O2H", "HO2", "OH2"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué partícula subatómica tiene carga positiva?",
+    "options": ["Neutrón", "Protón", "Electrón", "Quark"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es una solución en química?",
+    "options": ["Una mezcla heterogénea", "Una mezcla homogénea", "Un compuesto", "Un elemento"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es el gas más abundante en la atmósfera terrestre?",
+    "options": ["Oxígeno", "Dióxido de carbono", "Nitrógeno", "Hidrógeno"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué es un ácido según la teoría de Brønsted-Lowry?",
+    "options": ["Un donador de protones", "Un aceptor de protones", "Un donador de electrones", "Un aceptor de electrones"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué mide la masa atómica?",
+    "options": ["La cantidad de protones en un átomo", "La cantidad de neutrones en un átomo", "La suma de protones y neutrones en un átomo", "La cantidad de electrones en un átomo"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué es la ley de Avogadro?",
+    "options": ["Relación entre volumen y presión", "Relación entre volumen y temperatura", "Relación entre volumen y cantidad de gas", "Relación entre volumen y energía"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué describe la ecuación PV=nRT?",
+    "options": ["Ley de Boyle", "Ley de Charles", "Ley de los gases ideales", "Ley de Dalton"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es la unidad de resistencia eléctrica?",
+    "options": ["Voltio", "Amperio", "Ohmio", "Watt"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué describe la ley de Ohm?",
+    "options": ["Relación entre corriente y resistencia", "Relación entre voltaje y corriente", "Relación entre potencia y resistencia", "Relación entre voltaje y potencia"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es un electrón?",
+    "options": ["Una partícula subatómica sin carga", "Una partícula subatómica con carga negativa", "Una partícula subatómica con carga positiva", "Una partícula compuesta"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es la energía cinética?",
+    "options": ["Energía almacenada", "Energía en movimiento", "Energía térmica", "Energía química"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es la velocidad de la luz en el vacío?",
+    "options": ["3 x 10^8 m/s", "3 x 10^6 m/s", "3 x 10^5 m/s", "3 x 10^3 m/s"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué describe la ley de la gravitación universal?",
+    "options": ["Atracción entre cargas eléctricas", "Atracción entre masas", "Repulsión entre masas", "Repulsión entre cargas eléctricas"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué unidad se usa para medir la energía?",
+    "options": ["Newton", "Pascal", "Joule", "Watt"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué es la aceleración?",
+    "options": ["Cambio de velocidad", "Cambio de dirección", "Cambio de masa", "Cambio de tiempo"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué mide el voltaje?",
+    "options": ["Corriente", "Resistencia", "Potencia", "Diferencia de potencial"],
+    "correct_option": 3
+},
+{
+    "question": "¿Cuál es la fórmula de la fuerza?",
+    "options": ["m*a", "m/v", "v*t", "p/v"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué describe la ley de Coulomb?",
+    "options": ["Fuerza gravitacional", "Fuerza eléctrica", "Fuerza nuclear", "Fuerza magnética"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es el trabajo en física?",
+    "options": ["Fuerza aplicada sobre un objeto", "Energía transferida por una fuerza", "Potencia por tiempo", "Presión por volumen"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es la presión?",
+    "options": ["Fuerza por unidad de área", "Energía por unidad de volumen", "Masa por unidad de volumen", "Velocidad por unidad de tiempo"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué es un circuito en serie?",
+    "options": ["Un circuito con múltiples caminos", "Un circuito con un solo camino", "Un circuito con resistencias en paralelo", "Un circuito sin resistencia"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es la ley de conservación de la energía?",
+    "options": ["La energía se crea y se destruye", "La energía se conserva en sistemas cerrados", "La energía se disipa en sistemas abiertos", "La energía se transforma en materia"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué mide la frecuencia de una onda?",
+    "options": ["Longitud de onda", "Número de ciclos por segundo", "Amplitud de onda", "Velocidad de onda"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué tipo de lente tiene un espejo convexo?",
+    "options": ["Lente divergente", "Lente convergente", "Lente cilíndrica", "Lente esférica"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué es la temperatura absoluta?",
+    "options": ["0°C", "0°F", "0K", "100°C"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué describe la segunda ley de la termodinámica?",
+    "options": ["Conservación de la energía", "Incremento de la entropía", "Igualdad de trabajo y calor", "Equilibrio térmico"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué estudia la cinemática?",
+    "options": ["Movimiento sin considerar fuerzas", "Movimiento considerando fuerzas", "Interacción entre partículas", "Energía y trabajo"],
+    "correct_option": 0
+},
+{
+    "question": "¿Qué estudia la dinámica?",
+    "options": ["Movimiento sin considerar fuerzas", "Movimiento considerando fuerzas", "Interacción entre partículas", "Energía y trabajo"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué es un ciclo térmico?",
+    "options": ["Cambio de fase", "Proceso de transferencia de calor", "Secuencia de procesos termodinámicos", "Equilibrio térmico"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué país es conocido por la samba y el carnaval?",
+    "options": ["México", "España", "Brasil", "Cuba"],
+    "correct_option": 2
+},
+{
+    "question": "¿En qué ciudad se encuentra la Torre Eiffel?",
+    "options": ["Londres", "Berlín", "Roma", "París"],
+    "correct_option": 3
+},
+{
+    "question": "¿Qué invento se atribuye a los hermanos Wright?",
+    "options": ["Teléfono", "Radio", "Avión", "Bombilla"],
+    "correct_option": 2
+},
+{
+    "question": "¿Quién pintó 'La última cena'?",
+    "options": ["Vincent van Gogh", "Pablo Picasso", "Claude Monet", "Leonardo da Vinci"],
+    "correct_option": 3
+},
+{
+    "question": "¿En qué continente se encuentra Egipto?",
+    "options": ["Asia", "América", "Europa", "África"],
+    "correct_option": 3
+},
+{
+    "question": "¿Cuál es el idioma oficial de Brasil?",
+    "options": ["Español", "Portugués", "Inglés", "Francés"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué moneda se usa en Japón?",
+    "options": ["Yen", "Won", "Yuan", "Rupia"],
+    "correct_option": 0
+},
+{
+    "question": "¿Cuál es el río más largo del mundo?",
+    "options": ["Amazonas", "Nilo", "Yangtsé", "Misisipi"],
+    "correct_option": 1
+},
+{
+    "question": "¿Qué país tiene la mayor población del mundo?",
+    "options": ["India", "Estados Unidos", "China", "Rusia"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el monte más alto del mundo?",
+    "options": ["K2", "Kilimanjaro", "Denali", "Everest"],
+    "correct_option": 3
+},
+{
+    "question": "¿Quién fue el primer presidente de los Estados Unidos?",
+    "options": ["Abraham Lincoln", "George Washington", "Thomas Jefferson", "John Adams"],
+    "correct_option": 1
+},
+{
+    "question": "¿En qué país se encuentra la Torre de Pisa?",
+    "options": ["Francia", "España", "Grecia", "Italia"],
+    "correct_option": 3
+},
+{
+    "question": "¿Cuál es el país más grande del mundo en términos de superficie?",
+    "options": ["Canadá", "China", "Estados Unidos", "Rusia"],
+    "correct_option": 3
+},
+{
+    "question": "¿Qué país es conocido por sus canguros?",
+    "options": ["Sudáfrica", "Australia", "India", "Tailandia"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es la capital de Canadá?",
+    "options": ["Toronto", "Vancouver", "Montreal", "Ottawa"],
+    "correct_option": 3
+},
+{
+    "question": "¿En qué ciudad se encuentra la Estatua de la Libertad?",
+    "options": ["Los Ángeles", "Washington D.C.", "Nueva York", "San Francisco"],
+    "correct_option": 2
+},
+{
+    "question": "¿Quién fue el líder del movimiento de independencia en la India?",
+    "options": ["Jawaharlal Nehru", "Mahatma Gandhi", "Indira Gandhi", "Subhas Chandra Bose"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es la capital de Italia?",
+    "options": ["Roma", "Milán", "Venecia", "Florencia"],
+    "correct_option": 0
+},
+{
+    "question": "¿En qué país se encuentra Machu Picchu?",
+    "options": ["México", "Perú", "Chile", "Argentina"],
+    "correct_option": 1
+},
+{
+    "question": "¿Quién pintó el techo de la Capilla Sixtina?",
+    "options": ["Raphael", "Leonardo da Vinci", "Michelangelo", "Donatello"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el continente más grande?",
+    "options": ["África", "América", "Asia", "Europa"],
+    "correct_option": 2
+},
+{
+    "question": "¿Cuál es el metal más abundante en la corteza terrestre?",
+    "options": ["Hierro", "Aluminio", "Cobre", "Silicio"],
+    "correct_option": 1
+},
+{
+    "question": "¿Cuál es el evento deportivo más visto del mundo?",
+    "options": ["Super Bowl", "Juegos Olímpicos", "Copa Mundial de la FIFA", "Tour de Francia"],
+    "correct_option": 2
+},
+{
+    "question": "¿Qué país es conocido por su Gran Muralla?",
+    "options": ["Corea del Norte", "China", "Japón", "India"],
+    "correct_option": 1
+}
+]

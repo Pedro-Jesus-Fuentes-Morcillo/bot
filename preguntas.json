@@ -1,0 +1,202 @@
+[
+    {
+        "question": "¿Cuál es la capital de Francia?",
+        "options": ["París", "Londres", "Madrid", "Berlín"],
+        "correct_option": 0
+    },
+    {
+        "question": "¿Quién escribió 'Cien años de soledad'?",
+        "options": ["Gabriel García Márquez", "Mario Vargas Llosa", "Pablo Neruda", "Julio Cortázar"],
+        "correct_option": 0
+    },
+    {
+        "question": "¿En qué año llegó el hombre a la Luna?",
+        "options": ["1965", "1969", "1972", "1980"],
+        "correct_option": 1
+    },
+    {
+        "question": "¿Cuál es el río más largo del mundo?",
+        "options": ["Amazonas", "Nilo", "Yangtsé", "Misisipi"],
+        "correct_option": 0
+    },
+    {
+        "question": "¿Qué elemento químico tiene el símbolo 'O'?",
+        "options": ["Oro", "Osmio", "Oxígeno", "Oganesón"],
+        "correct_option": 2
+    },
+    {
+        "question": "¿Quién pintó 'La última cena'?",
+        "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Miguel Ángel"],
+        "correct_option": 2
+    },
+    {
+        "question": "¿Cuál es el planeta más grande del sistema solar?",
+        "options": ["Júpiter", "Saturno", "Neptuno", "Urano"],
+        "correct_option": 0
+    },
+    {
+        "question": "¿Cuál es el idioma más hablado en el mundo?",
+        "options": ["Inglés", "Chino mandarín", "Español", "Hindú"],
+        "correct_option": 1
+    },
+    {
+        "question": "¿Quién es el autor de 'Don Quijote de la Mancha'?",
+        "options": ["Miguel de Cervantes", "William Shakespeare", "Dante Alighieri", "Homer"],
+        "correct_option": 0
+    },
+    {
+        "question": "¿Qué país ganó la Copa Mundial de Fútbol en 2018?",
+        "options": ["Alemania", "Argentina", "Francia", "Brasil"],
+        "correct_option": 2
+    },
+    {
+        "question": "¿Cuál es la montaña más alta del mundo?",
+        "options": ["Monte Everest", "K2", "Kangchenjunga", "Lhotse"],
+        "correct_option": 0
+    },
+    {
+        "question": "¿Quién formuló la teoría de la relatividad?",
+        "options": ["Isaac Newton", "Nikola Tesla", "Albert Einstein", "Galileo Galilei"],
+        "correct_option": 2
+    },
+    {
+        "question": "¿Cuál es el océano más grande del mundo?",
+        "options": ["Atlántico", "Pacífico", "Índico", "Ártico"],
+        "correct_option": 1
+    },
+    {
+        "question": "¿Qué país tiene la mayor población del mundo?",
+        "options": ["India", "Estados Unidos", "China", "Indonesia"],
+        "correct_option": 2
+    },
+    {
+        "question": "¿Quién es el autor de 'La Odisea'?",
+        "options": ["Homero", "Virgilio", "Sófocles", "Esquilo"],
+        "correct_option": 0
+    },
+    {
+        "question": "¿En qué continente se encuentra el desierto del Sahara?",
+        "options": ["Asia", "América del Norte", "África", "Australia"],
+        "correct_option": 2
+    },
+    {
+        "question": "¿Cuál es el país más grande del mundo?",
+        "options": ["China", "Estados Unidos", "Canadá", "Rusia"],
+        "correct_option": 3
+    },
+    {
+        "question": "¿Quién descubrió la penicilina?",
+        "options": ["Marie Curie", "Alexander Fleming", "Louis Pasteur", "Gregor Mendel"],
+        "correct_option": 1
+    },
+    {
+        "question": "¿Cuál es el instrumento musical más grande?",
+        "options": ["Piano", "Tuba", "Órgano", "Contrabajo"],
+        "correct_option": 2
+    },
+    {
+        "question": "¿En qué país se originaron los Juegos Olímpicos?",
+        "options": ["Roma", "Grecia", "Egipto", "China"],
+        "correct_option": 1
+    },
+    {
+        "question": "¿Qué molécula transporta oxígeno en la sangre?",
+        "options": ["Hemoglobina", "ADN", "Insulina", "Clorofila"],
+        "correct_option": 0
+    },
+    {
+        "question": "¿Cuál es el país más pequeño del mundo?",
+        "options": ["San Marino", "Mónaco", "Liechtenstein", "Ciudad del Vaticano"],
+        "correct_option": 3
+    },
+    {
+        "question": "¿Cuál es el libro sagrado del Islam?",
+        "options": ["La Biblia", "El Corán", "El Talmud", "El Veda"],
+        "correct_option": 1
+    },
+    {
+        "question": "¿Quién escribió 'La Divina Comedia'?",
+        "options": ["Dante Alighieri", "Geoffrey Chaucer", "John Milton", "Virgilio"],
+        "correct_option": 0
+    },
+    {
+        "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
+        "options": ["1935", "1938", "1939", "1941"],
+        "correct_option": 2
+    },
+    {
+        "question": "¿Cuál es el metal más ligero?",
+        "options": ["Aluminio", "Magnesio", "Litio", "Titanio"],
+        "correct_option": 2
+    },
+    {
+        "question": "¿Quién pintó la Capilla Sixtina?",
+        "options": ["Leonardo da Vinci", "Miguel Ángel", "Rafael", "Donatello"],
+        "correct_option": 1
+    },
+    {
+        "question": "¿Cuál es el océano más pequeño del mundo?",
+        "options": ["Atlántico", "Índico", "Ártico", "Pacífico"],
+        "correct_option": 3
+    },
+    {
+        "question": "¿Qué científico propuso las tres leyes del movimiento?",
+        "options": ["Albert Einstein", "Isaac Newton", "Nikola Tesla", "Galileo Galilei"],
+        "correct_option": 1
+    },
+    {
+        "question": "¿Cuál es el segundo país más grande del mundo?",
+        "options": ["China", "Estados Unidos", "Canadá", "Rusia"],
+        "correct_option": 2
+    },
+    {
+        "question": "¿Qué país tiene más medallas olímpicas?",
+        "options": ["Rusia", "China", "Estados Unidos", "Reino Unido"],
+        "correct_option": 2
+    },
+    {
+        "question": "¿Qué planeta es conocido como el Planeta Rojo?",
+        "options": ["Marte", "Júpiter", "Saturno", "Venus"],
+        "correct_option": 0
+    },
+    {
+        "question": "¿Quién escribió 'Romeo y Julieta'?",
+        "options": ["Miguel de Cervantes", "Dante Alighieri", "William Shakespeare", "Geoffrey Chaucer"],
+        "correct_option": 2
+    },
+    {
+        "question": "¿Qué país se conoce como la tierra del sol naciente?",
+        "options": ["Corea del Sur", "China", "Japón", "Vietnam"],
+        "correct_option": 2
+    },
+    {
+        "question": "¿Cuál es el animal terrestre más grande?",
+        "options": ["Elefante africano", "Elefante asiático", "Jirafa", "Rinoceronte"],
+        "correct_option": 0
+    },
+    {
+        "question": "¿Cuál es la moneda de Japón?",
+        "options": ["Yuan", "Won", "Yen", "Dong"],
+        "correct_option": 2
+    },
+    {
+        "question": "¿Qué vitamina se obtiene principalmente del sol?",
+        "options": ["Vitamina A", "Vitamina C", "Vitamina D", "Vitamina E"],
+        "correct_option": 2
+    },
+    {
+        "question": "¿Qué invento se atribuye a los hermanos Wright?",
+        "options": ["Teléfono", "Radio", "Avión", "Bombilla"],
+        "correct_option": 2
+    },
+    {
+        "question": "¿En qué ciudad se encuentra la Torre Eiffel?",
+        "options": ["Londres", "Berlín", "Roma", "París"],
+        "correct_option": 3
+    },
+    {
+        "question": "¿Qué país es conocido por la samba y el carnaval?",
+        "options": ["México", "España", "Brasil", "Cuba"],
+        "correct_option": 2
+    }
+]
