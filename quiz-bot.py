@@ -37,6 +37,7 @@ TOTAL_VOTER_COUNT = 5
 # Token de tu bot
 TOKEN_FILE = "TOKEN.txt"
 INTERVAL = 2700 # secconds
+MSG_DELETE_TIME = 120
 #INTERVAL = 4
 
 # Cargar preguntas desde el archivo JSON
@@ -180,6 +181,22 @@ def add_group(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     update.message.reply_text('¡Gracias por añadirme al grupo! Enviaré preguntas de cultura general cada '+INTERVAL/60+' minutos.')
     context.job_queue.run_once(quiz, when = 0, data = INTERVAL, chat_id = chat_id, name="quiz")
 
+async def msg_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    """Read all msg and search pito word"""
+    key_word = "pito"
+    msg = update.message
+    msg_lower = msg.text.lower()
+    if msg_lower.find(key_word) != -1:
+        photo = await context.bot.send_photo(msg.chat_id,
+                                    photo=open("./imgs/pito.jpg", "rb"),
+                                    caption="Mmm no se antojen...",
+                                    reply_to_message_id=msg.message_id)
+        context.job_queue.run_once(delete_msg, MSG_DELETE_TIME,
+                               data={'chat_id': photo.chat_id,
+                                     'msg_id': photo.message_id,
+                                     'context': context},
+                               name="delete-msg")
+
 def main() -> None:
     """Run bot."""
     # Create the Application and pass it your bot's token.
@@ -191,6 +208,7 @@ def main() -> None:
     application.add_handler(CommandHandler("test", test))
     application.add_handler(CommandHandler("quiz", quiz))
     application.add_handler(CommandHandler("set_interval", set_interval, has_args=True))
+    application.add_handler(MessageHandler(filters.TEXT, msg_handler, block=False))
     #application.add_handler(CommandHandler("addgroup", add_group))
     application.add_handler(PollHandler(receive_quiz_answer))
 
