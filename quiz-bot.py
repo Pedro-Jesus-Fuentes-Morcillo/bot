@@ -1,10 +1,3 @@
-import json
-import asyncio
-import logging
-import random
-import add_pic
-#from asyncio import Queue
-
 from telegram import (
     KeyboardButton,
     KeyboardButtonPollType,
@@ -12,6 +5,7 @@ from telegram import (
     ReplyKeyboardMarkup,
     ReplyKeyboardRemove,
     Update,
+    Message
 )
 from telegram.constants import ParseMode
 from telegram.ext import (
@@ -27,7 +21,25 @@ from telegram.ext import (
     filters,
 )
 
-# Configuración del logging
+import os
+import json
+import logging
+import random
+import time
+import functions
+from datetime import datetime
+from FileIDCache import FileIDCache
+from constants import (
+    BASE_DIR, DATA_DIR,
+    MEDIA_DIR, CACHE_FILE_PATH,
+    VIDEO_DIR, IMAGE_DIR,
+    GIF_DIR, VOICE_DIR,
+    EDITS_DIR
+)
+
+import edit_img
+
+# Logging configuration
 logging.basicConfig(filename="/tmp/quiz-bot.log",
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
@@ -39,15 +51,18 @@ TOTAL_VOTER_COUNT = 5
 # Token de tu bot
 TOKEN_FILE = "TOKEN.txt"
 INTERVAL = 2700 # secconds
-MSG_DELETE_TIME = 90
+MSG_DELETE_TIME = 900
 #INTERVAL = 4
 
 # Cargar preguntas desde el archivo JSON
-with open('nuevas.json', 'r', encoding='utf-8') as f:
+with open('preguntas-2.json', 'r', encoding='utf-8') as f:
     questions = json.load(f)
 
 # Almacenar las preguntas y las respuestas correctas temporalmente
 current_question = {}
+
+# Load media files id cache
+file_id_cache = FileIDCache()
 
 def get_bot_token():
     """Get token from file"""
@@ -61,7 +76,8 @@ async def start_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
     await update.message.reply_text(
         "Enviando cuestionarios cada "+ str(int(INTERVAL/60))+ " minutos"
     )
-    context.application.job_queue.run_once(quiz, when = 0, data = INTERVAL, chat_id = chat_id, name="quiz")
+    context.application.job_queue.run_once(quiz, when = 0, data = INTERVAL,
+                                           chat_id = chat_id, name="quiz")
     context.application.job_queue.run_repeating(quiz, interval=INTERVAL, first=0, 
                                     data = INTERVAL, chat_id = chat_id, name="quiz")
     #context.application.job_queue.run_repeating(quiz, interval=10, first=0, context=chat_id, name="quiz")
@@ -120,17 +136,18 @@ async def quiz(context: ContextTypes.DEFAULT_TYPE) -> None:
     job = context.job
     chat_id=job.chat_id
     #chat_id = update.effective_chat.id
-
-    question = random.choice(questions)  # Selecciona una pregunta aleatoria
+    current_time = time.time()
+    initial_random = random.Random(current_time)
+    new_seed = initial_random.randint(0, 2**32 - 1)
+    final_random = random.Random(new_seed)
+    question = final_random.choice(questions)
     options = question['options']
     correct_option = question['correct_option']
     question_text = question['question']
 
-    # Mezclar las opciones
     options_with_indices = list(enumerate(options))
     random.shuffle(options_with_indices)
 
-    # Guardar la pregunta y la respuesta correcta en la posición aleatorizada
     current_question[chat_id] = {
         'question': question['question'],
         'correct_option': next(idx for idx, option in options_with_indices if option == options[correct_option])
@@ -138,10 +155,12 @@ async def quiz(context: ContextTypes.DEFAULT_TYPE) -> None:
 
     msg = await context.bot.send_poll(
         chat_id, question_text, options, 
-        type=Poll.QUIZ, correct_option_id=correct_option, is_anonymous=False
+        type=Poll.QUIZ, correct_option_id=correct_option, is_anonymous=False,
+        disable_notification=True
     )
 
-    text = await context.bot.send_message(chat_id, "Esta seguro que Enmaporro y Paporro no la aciertan")
+    text = await context.bot.send_message(chat_id, "Esta seguro que Enmaporro y Paporro no la aciertan",
+                                          disable_notification=True)
     # Save some info about the poll the bot_data for later use in receive_quiz_answer
     payload = {
         msg.poll.id: {"chat_id": chat_id, "message_id": msg.message_id}
@@ -182,7 +201,8 @@ def add_group(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     context.application.job_queue.run_repeating(quiz, interval=INTERVAL, first=0, 
                                     data = INTERVAL, chat_id = chat_id, name="quiz")
     update.message.reply_text('¡Gracias por añadirme al grupo! Enviaré preguntas de cultura general cada '+INTERVAL/60+' minutos.')
-    context.application.job_queue.run_once(quiz, when = 0, data = INTERVAL, chat_id = chat_id, name="quiz")
+    context.application.job_queue.run_once(quiz, when = 0, data = INTERVAL,
+                                           chat_id = chat_id, name="quiz")
 
 async def pic_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Get msg with photos"""
@@ -190,55 +210,157 @@ async def pic_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
     reply_list = []
     msg = update.message
     photo_id = None
-    photo_file = None
-    orig_file = './imgs/edits/orig.jpg'
-    png_file = './imgs/edits/barba.png'
-    if msg.photo:
-        if msg.caption.lower().find('es pablo') != -1:
-            photo_id=msg.photo[-1].file_id
-            photo_file= await context.bot.get_file(photo_id)
-            await photo_file.download_to_drive(orig_file)
-            add_pic.add_pic(orig_file, png_file)
-            reply = await context.bot.send_photo(msg.chat_id,
-                                    photo=open("./imgs/edits/result.jpg", "rb"),
-                                    caption="Es increíble como es literalmente Pablo",
-                                    reply_to_message_id=msg.message_id)
-            reply_list.append(reply)
+    orig_path = os.path.join(EDITS_DIR, 'orig.jpg')
+    result_path = os.path.join('edits', 'result.jpg')
+    filter_path = ''
+    msg_text = ''
+    if msg.caption:
+        msg_text = functions.basic_str(msg.caption)
+    elif msg.reply_to_message and msg.text:
+        msg_text = functions.basic_str(msg.text)
+
+    if msg.reply_to_message:
+        if msg.reply_to_message.photo:
+            photo_id=msg.reply_to_message.photo[-1].file_id
+    else:
+        photo_id=msg.photo[-1].file_id
+
+    if msg_text.find('es pablo') != -1:
+        filter_path = os.path.join(EDITS_DIR, 'barba.png')
+        
+        await functions.download_photo(context=context, photo_id=photo_id)
+        edit_img.add_pic(orig_path, filter_path)
+        reply = await functions.send_pic(update, context,
+                                         image_filename=result_path,
+                                         caption="Es increíble como es literalmente Pablo")
+        reply_list.append(reply)
+
+    if msg_text.find('es peter') != -1:
+        filter_path = os.path.join(EDITS_DIR, 'peter.png')
+        
+        await functions.download_photo(context=context, photo_id=photo_id)
+        edit_img.add_pic(orig_path, filter_path)
+        reply = await functions.send_pic(update, context,
+                                         image_filename=result_path,
+                                         caption="Es increíble como es literalmente Peter")
+        
+        reply_list.append(reply)
+
+    if msg_text.find('es enma') != -1:
+        filter_path = os.path.join(EDITS_DIR, 'rainbow.png')
+        
+        await functions.download_photo(context=context, photo_id=photo_id)
+        edit_img.apply_filter(orig_path, filter_path)
+        reply = await functions.send_pic(update, context,
+                                         image_filename=result_path,
+                                         caption="Es increíble como es literalmente Enmanué")
+        reply_list.append(reply)
 
     if reply_list:
         for reply in reply_list:
-            context.application.job_queue.run_once(delete_msg, MSG_DELETE_TIME,
+            context.application.job_queue.run_once(delete_msg, 14400,
                                 data={'chat_id': reply.chat_id,
                                         'msg_id': reply.message_id,
                                         'context': context},
                                 name="delete-msg")
-    
+
 async def msg_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Read all msg and search pito word"""
-    pito_word = "pito"
-    gay_word = "gay"
-    guapo_word = "guapo"
     reply = None
     reply_list = []
-    msg = update.message    
-    msg_lower = msg.text.lower()
-    if msg_lower.find(pito_word) != -1:
-        reply = await context.bot.send_photo(msg.chat_id,
-                                    photo=open("./imgs/pito.jpg", "rb"),
-                                    caption="Mmm no se antojen...",
-                                    reply_to_message_id=msg.message_id)
+    msg = update.message
+    #logger.info("Chat: "+str(msg.chat.full_name)+"\nMsg: " +str(msg.text)+ "Usr: "+str(msg.from_user))
+    logger.info(f"Chat: %s \nMsg: %s \nUsr: %s",str(msg.chat.title), str(msg.text), str(msg.from_user.username))
+    msg_basic = functions.basic_str(msg.text)
+
+    # if msg.from_user.username == "byAtlas":
+    #     reply = await context.bot.send_video(msg.chat_id,
+    #                                         video=open("./data/media/vid/cat_laught.mp4", "rb"),
+    #                                         reply_to_message_id=msg.message_id,
+    #                                         caption="Una mierda más grande no podrías haber enviado?????")
+    #     reply_list.append(reply)
+    
+    if msg_basic.find("pito") != -1:
+        reply = await functions.send_pic(update, context,
+                                         image_filename='pito.jpg',
+                                         caption="Mmm no se antojen...",
+                                         use_cache=True)
         reply_list.append(reply)
-    if msg_lower.find(guapo_word) != -1:
-        reply = await context.bot.send_photo(msg.chat_id,
-                                    photo=open("./imgs/guapo.jpg", "rb"),
-                                    caption="Mmm no se antojen...",
-                                    reply_to_message_id=msg.message_id)
+    if msg_basic.find("guapo") != -1:
+        reply = await functions.send_pic(update, context,
+                                         image_filename='guapo_peter.jpg',
+                                         caption="Mmm si que lo soy...",
+                                         use_cache=True)
         reply_list.append(reply)
-    if msg_lower.find(gay_word) != -1:
-        reply = await context.bot.send_voice(msg.chat_id,
-                                             voice=open("./voice/gay.mp3", "rb"),
+    if msg_basic.find("gay") != -1:
+        reply = await functions.send_voice(update, context,
+                                         voice_filename='gay.ogg',
+                                         use_cache=True)
+
+        reply_list.append(reply)
+
+    if (
+        msg_basic.find("blender") != -1 or
+        msg_basic.find("pixel art") != -1 or
+        msg_basic.find("3d") != -1 or
+        msg_basic.find("curso") != -1
+    ):
+
+        reply = await functions.send_pic(update, context,
+                                         image_filename='blender.jpg',
+                                         caption="Así va mi curso también",
+                                         use_cache=True)
+        
+        reply_list.append(reply)
+
+    if msg_basic.find('toot') != -1:
+        reply = await functions.send_pic(update, context,
+                                         image_filename='toot_dolphin.jpg',
+                                         use_cache=True)
+        reply_list.append(reply)
+        
+        reply = await functions.send_voice(update, context,
+                                         voice_filename='toot.ogg',
+                                         use_cache=True)
+        reply_list.append(reply)
+
+
+    if msg_basic.find("que entre la china") != -1:
+        reply = await functions.send_animation(update, context,
+                                         animation_filename='china.gif',
+                                         caption=(
+                                                "DIOS SANTO BENDITO SIIIIIII POR DIOS YA ESTA AQUI LA CHINAAAAAA\n"
+                                                "La fokin china: 连我的母亲都对球操感到后悔"
+                                                ),
+                                         use_cache=True
+                                         )
+        reply_list.append(reply)
+
+    if msg_basic.find("buenos dias") != -1:
+        day_of_week = get_day_of_week(msg)
+
+        video_path = os.path.join(VIDEO_DIR, 'buenos_dias', f"{day_of_week}.mp4")
+
+        if os.path.exists(video_path):
+            reply = await functions.send_video(update, context,
+                                                video_filename=day_of_week,
+                                                caption="BUENOOOOOS DIAAAAS NOS DE DIOOOOOSSS")
+        else:
+            await context.bot.send_message(msg.chat_id,
+                                           text="Sorry, the video for today is not available.")
+
+        reply_list.append(reply)
+
+    if msg_basic.find("chikitiyo") != -1:
+        reply = await context.bot.send_audio(msg.chat_id,
+                                             voice=open("./data/media/voice/chiki.mp3", "rb"),
                                              reply_to_message_id=msg.message_id)
+
         reply_list.append(reply)
+
+    if msg_basic.find("es ") != -1 and msg.reply_to_message:
+        if msg.reply_to_message.photo:
+            await pic_handler(update=update, context=context)
 
     #if reply is not None:
     if reply_list:
@@ -251,11 +373,14 @@ async def msg_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
 
 async def resume_quiz_after_restart(application: Application) -> None:
     """Resume quizes after bot restart"""
-    chat_id = "-1001915500416"
+    chat_id = "-1001915500416" #Maincra
+    chat_id_2 = '-1001105441433' #Fuent
     # reply = await application.bot.send_message(chat_id,
     #                                 text="Bot restarted...")
     application.job_queue.run_repeating(quiz, interval=INTERVAL, first=0,
                                     data = INTERVAL, chat_id = chat_id, name="quiz")
+    application.job_queue.run_repeating(quiz, interval=INTERVAL, first=0,
+                                    data = INTERVAL, chat_id = chat_id_2, name="quiz")
 
 async def post_init(application: Application) -> None:
     """Execute after bot startup"""
@@ -264,6 +389,21 @@ async def post_init(application: Application) -> None:
                 ("set_interval", "Give a numer of mins between quizs")]
     await application.bot.set_my_commands(commands)
     await resume_quiz_after_restart(application)
+
+def get_day_of_week(msg: Message) -> str:
+    '''Get weekday from msg date'''
+    message_date = msg.date
+    message_datetime = message_date.astimezone()
+    day_of_week = message_datetime.strftime('%A')
+    
+    return day_of_week.lower()
+
+async def clear_cache(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    msg = update.message
+    functions.file_id_cache.clear_cache()
+    await context.bot.send_message(msg.chat_id,
+                                   text="Media caché file deleted.")
+    
 
 def main() -> None:
     """Run bot."""
@@ -275,13 +415,14 @@ def main() -> None:
     application.add_handler(CommandHandler("start", start_quiz))
     application.add_handler(CommandHandler("test", test))
     application.add_handler(CommandHandler("quiz", quiz))
+    application.add_handler(CommandHandler("clear_cache", clear_cache))
     application.add_handler(CommandHandler("stop_quiz", stop_quiz))
     application.add_handler(CommandHandler("set_interval", set_interval, has_args=True))
     application.add_handler(MessageHandler(filters.TEXT, msg_handler, block=False))
     application.add_handler(MessageHandler(filters.PHOTO, pic_handler, block=False))
     #application.add_handler(CommandHandler("addgroup", add_group))
     application.add_handler(PollHandler(receive_quiz_answer))
-    
+
     # Run the bot until the user presses Ctrl-C
     application.run_polling(allowed_updates=Update.ALL_TYPES)
 
